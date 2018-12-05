@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Spillcry</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../script/script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <ul id="navbar">
+      <li class="tab"><a href="../index.html">Home</a></li>
+      <li class="tab">
+        <a href="intro.html">Introduction</a>
+        <ul>
+          <li class="tab"><a href="intro.html#background">Background</a></li>
+          <li class="tab"><a href="intro.html#motivation">Motivation</a></li>
+          <li class="tab"><a href="intro.html#mission">Mission</a></li>
+          <li class="tab"><a href="intro.html#schedule">Schedule</a></li>
+          <li class="tab"><a href="intro.html#assumptions">Assumptions</a></li>
+          <li class="tab"><a href="intro.html#functions">Functions</a></li>
+        </ul>
+      </li>
+      <li class="tab">
+        <a href="req.html">Requirements</a>
+        <ul>
+          <li class="tab"><a href="req.html#stakeholders">Stakeholders</a></li>
+          <li class="tab"><a href="req.html#needs">Needs</a></li>
+          <li class="tab"><a href="req.html#ahp">AHP</a></li>
+          <li class="tab"><a href="req.html#reqs">Requirements</a></li>
+          <li class="tab"><a href="req.html#hoq">HOQ</a></li>
+        </ul>
+      </li>
+      <li class="tab">
+        <a href="concept.html">Concepts</a>
+        <ul>
+          <li class="tab"><a href="concept.html#generation">Generation</a></li>
+          <li class="tab"><a href="concept.html#patent">Patentability</a></li>
+          <li class="tab"><a href="concept.html#selection">Selection</a></li>
+        </ul>
+      </li>
+      <li class="tab">
+        <a href="develop.html">Development</a>
+        <ul>
+          <li class="tab"><a href="develop.html#risks">Risks</a></li>
+          <li class="tab"><a href="develop.html#cba">Costs</a></li>
+          <li class="tab"><a href="develop.html#final">Final Concept</a></li>
+        </ul>
+      </li>
+      <li class="tab"><a href="lesson.html">Lessons</a></li>
+      <li class="tab"><a href="next.html">Next Steps</a></li>
+      <li class="tab"><a href="ref.html">References</a></li>
+    </ul>
+
+    <div class="report">
+      <div id="background">
+        <h2>Background</h2>
+        <p>
+          In April of 2010, BP's Deepwater Horizon oil rig exploded, killing eleven workers and spilling an estimated 53,000 barrels per day of oil into the Gulf of Mexico. In addition to the human lives lost in the explosion, the resulting oil spill killed over 82,000 birds, 25,900 marine animals, 6,000 sea turtles, and <a href="https://www.marineinsight.com/environment/11-major-oil-spills-of-the-maritime-world/">tens of thousands of fish</a>. And this was just the damage seen above the ocean's surface. Deeper in the waters, <a href="https://news.nationalgeographic.com/2015/04/150418-gulf-oil-spill-sea-snot-oceans-environment-energy-deepwater-bp/">100 million gallons of oil from a seafloor oil gusher sank and settled onto the ocean floor</a>.
+        </p>
+        <p>
+          The Deepwater Horizons disaster was just one of many oil spills that have occurred along US coasts, and not all have received the same amount of public attention. For example, the <a href="https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/largest-oil-spills-affecting-us-waters-1969.html">Taylor Oil Spill</a> has been quietly leaking millions of barrels of oil into the Gulf for fourteen years. Currently, most oil spills are only detected when they become large enough to be unavoidable.
+        </p>
+      </div>
+
+      <div id="motivation">
+        <h2>Motivation</h2>
+        <p>
+          Since 1969, at least of <a href="https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/largest-oil-spills-affecting-us-waters-1969.html">forty-four major oil spills</a> have affected US Coasts, with over 10,000 barrels of oil leaked into the ocean. These spills have had terrible consequences, both environmentally and economically. Ever since the <a href="https://www.youtube.com/watch?v=15HTd4Um1m4">terrible blow to BP's reputation</a> following the Deepwater Horizon disaster, systems for surveilling, preventing, and mitigating oil spills have been in high demand. These efforts are further encouraged by the <a href="https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations">Oil Spills Prevention and Preparedness Regulations</a> put in place by the EPA and US Coast Guard.
+        </p>
+        <p>
+          Detecting these spills early can mean the difference between a minor setback and a catastrophe for all those affected. This creates a monumental need for affordable and effective early-spill-detection systems within the oil industry. That's where Project Spillcry comes in.
+        </p>
+      </div>
+
+      <div id="mission">
+        <h2>Mission</h2>
+        <p>
+          The mission of Project Spillcry is to create a system capable of detecting and assessing oil spills occurring near US coasts and alerting relevant thid parties in a timely manner. Such a system will minimize the overall cost of ending and recovering from these spills.
+        </p>
+      </div>
+
+      <div id="schedule">
+        <h2>Schedule</h2>
+        <p>
+        </p>
+      </div>
+
+      <div id="assumptions">
+        <h2>Assumptions</h2>
+        <p>
+          The development of a final concept relied on a few key assumptions. Note that the need for these assumptions become more clear in the <a href="develop.html">Development</a> section of this report.
+        </p>
+        <p>
+          For this preliminary design, we assume:
+        </p>
+        <ul>
+          <li><b>The state of an oil spill can be accurately assessed from only the visible layer near the ocean surface.</b> This assumption is critical to the use of UAVs in the final concept.</li>
+          <li><b>Computer vision measurement errors are normally distributed.</b> This is necessary due to the asymmetry of actual measurement distributions in most computer vision applications. This is a standard assumption in the robotics industry.</li>
+          <li><b>Oil spill progress is a linear process with random noise entirely contained in the measurement model.</b> This allows the progression of an oil spill to be described as a linear process with Gaussian noise. This assumption greatly simplifies the task of making reliable predictions related to spill development.</li>
+        </ul>
+      </div>
+
+      <div id="functions">
+        <h2>Functional Analysis</h2>
+        <p>
+            To conduct a functional analysis of this problem, we considered three primary high-level functions that our system must perform. In the most simple language, our system must:
+        </p>
+        <ol>
+          <li>Detect oil spills,</li>
+          <li>Assess oil spills, and</li>
+          <li>Alert third parties.</li>
+        </ol>
+        <p>
+          However, these functions are noticeably vague and rather unhelpful on their own. Thus, our next step was to consider each of these functions as a set of lower-level “sub-functions” necessary to perform each task. This provided a more detailed analysis and gave us better information with which to generate needs and requirements.
+        </p>
+        <ol>
+          <li>
+            <b>Detect oil spills.</b>
+            <ol>
+              <li><b>Regularly inspect spill-vulnerable areas.</b> In order to detect oil spills in a timely manner, our system must inspect areas in which spills would be likely to occur (we refer to these as “spill-vulnerable areas”). These areas must be inspected on a regular basis to ensure no spills are able to persist too long without being detected.</li>
+              <li><b>Notice spills.</b> While inspecting spill-vulnerable areas, our system should accurately notice any oil spills. It should not only report spills that are present, but also refrain from “false alarms” (reporting spills that have not actually occurred).</li>
+              <li><b>Store spill location data.</b> When an oil spill is noticed, our system should be capable of somehow logging the location of the oil spill in order for appropriate action to be taken.</li>
+              <li><b>Store spill time data.</b> When an oil spill is noticed, our system should be capable of somehow logging the time at which the spill was detected for the purpose of future analysis.</li>
+            </ol>
+          </li>
+          <li>
+            <b>Assess oil spills.</b>
+            <ol>
+              <li><b>Assess spill progress.</b> Our system should be capable of somehow assessing how much a detected oil spill has progressed beyond the point of the spill.</li>
+              <li><b>Estimate spill age.</b> Our system should be capable of somehow estimating how long a detected oil spill has existed.</li>
+              <li><b>Estimate spill origin point.</b> Our system should be capable of somehow estimating the origin point of a detected oil spill; that is, where the spill itself is occurring as opposed to simply where the oil currently is.</li>
+              <li><b>Store progress information.</b> Once our system has assessed an oil spill’s progress, it should be able to somehow store this information.</li>
+              <li><b>Store age information.</b> Once our system has calculated an oil spill’s estimated age, it should be able to somehow store this information.</li>
+              <li><b>Store origin information.</b> Once our system has estimated an oil spill’s origin point, it should be able to somehow store this information.</li>
+              <li><b>Generate statistics (spill danger level).</b> Our system should be capable of somehow combining observations of the spill’s progress and rate to compute a “danger level”; in simple terms, some metric that simply tells how “scary” a spill is.</li>
+            </ol>
+          </li>
+          <li>
+            <b>Alert third parties.</b>
+            <ol>
+              <li><b>Maintain list of relevant third parties.</b> Our system should maintain a list of third parties who would desire information regarding oil spills. These third parties may include governments, corporations, research groups, or non-profit organizations.</li>
+              <li><b>Establish communications with third parties.</b> Our system should be able to somehow establish communications with all relevant third parties (such as those listed above).</li>
+              <li><b>Maintain communications with third parties while transmitting information.</b> Once communications are established, our system should maintain consistent communications while transmitting relevant information to those third parties that desire it. Note that our system need not necessarily maintain consistent communications throughout operation; it need only maintain communications while transmitting information.</li>
+              <li><b>Provide adequate transmission speeds.</b> While transmitting information to third parties, our system should transmit this data and speeds necessary to deliver all information in a timely manner.</li>
+              <li><b>Inform third parties of estimated damage and spill rate.</b> Along with functions listed above, our system must somehow be capable of actually transmitting desired information to relevant third parties.</li>
+            </ol>
+          </li>
+        </ol>
+        <p>
+          We then translated these functions into a functional block diagram for more intuitive representation.
+        </p>
+        <img id="fab" src="../img/FABlock_Format2.JPG" title="Functional block diagram"/>
+      </div>
+    </div>
+  </body>
+</html>

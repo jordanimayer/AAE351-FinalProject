@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Spillcry</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../script/script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <ul id="navbar">
+      <li class="tab"><a href="../index.html">Home</a></li>
+      <li class="tab">
+        <a href="intro.html">Introduction</a>
+        <ul>
+          <li class="tab"><a href="intro.html#background">Background</a></li>
+          <li class="tab"><a href="intro.html#motivation">Motivation</a></li>
+          <li class="tab"><a href="intro.html#mission">Mission</a></li>
+          <li class="tab"><a href="intro.html#schedule">Schedule</a></li>
+          <li class="tab"><a href="intro.html#assumptions">Assumptions</a></li>
+          <li class="tab"><a href="intro.html#functions">Functions</a></li>
+        </ul>
+      </li>
+      <li class="tab">
+        <a href="req.html">Requirements</a>
+        <ul>
+          <li class="tab"><a href="req.html#stakeholders">Stakeholders</a></li>
+          <li class="tab"><a href="req.html#needs">Needs</a></li>
+          <li class="tab"><a href="req.html#ahp">AHP</a></li>
+          <li class="tab"><a href="req.html#reqs">Requirements</a></li>
+          <li class="tab"><a href="req.html#hoq">HOQ</a></li>
+        </ul>
+      </li>
+      <li class="tab">
+        <a href="concept.html">Concepts</a>
+        <ul>
+          <li class="tab"><a href="concept.html#generation">Generation</a></li>
+          <li class="tab"><a href="concept.html#patent">Patentability</a></li>
+          <li class="tab"><a href="concept.html#selection">Selection</a></li>
+        </ul>
+      </li>
+      <li class="tab">
+        <a href="develop.html">Development</a>
+        <ul>
+          <li class="tab"><a href="develop.html#risks">Risks</a></li>
+          <li class="tab"><a href="develop.html#cba">Costs</a></li>
+          <li class="tab"><a href="develop.html#final">Final Concept</a></li>
+        </ul>
+      </li>
+      <li class="tab"><a href="lesson.html">Lessons</a></li>
+      <li class="tab"><a href="next.html">Next Steps</a></li>
+      <li class="tab"><a href="ref.html">References</a></li>
+    </ul>
+
+    <div class="report">
+      <div id="stakeholders">
+        <h2>Stakeholder Analysis</h2>
+        <p>
+          When designing our system, we considered the following stakeholders:
+        </p>
+        <ol>
+          <li><b>Governments of coastal nations.</b> Governments have a duty to protect their citizens from disasters such as oil spills; as such, they would be very interested in minimizing the damage caused by spills. Note that, although our system is focused on US coasts, other nations such as Mexico may still be affected by spills occurring in these regions if they were to go unchecked.</li>
+          <li><b>Residents of coastal communities.</b> Citizens who live near coasts will have their lives adversely affected by oil spills due to polluted water, bad smells, and less attractive beaches.</li>
+          <li><b>Coastal vacationers.</b> Even of people who do not live near coasts, many enjoy vacationing near coastal areas. Their vacations would certainly be less enjoyable if the beach they visited was covered in spilt oil.</li>
+          <li><b>Seafood-based businesses.</b> Companies who rely on seafood for their business will find themselves short on supply if an oil spill contaminates an area that is normally a source of seafood.</li>
+          <li><b>Oil companies.</b> Companies who rely on oil for their business will not only lose supply due to oil spills, but may face public backlash and major public relations problems if the oil spill goes on too long or causes too much damage (BP faced this very problem when their infamous Deepwater Horizon oil spill occurred).</li>
+          <li><b>Businesses reliant on oil.</b> Many companies are reliant on oil, either directly (e.g. gas stations) or indirectly (e.g. any company that transports goods by truck). The wasted oil supply due to a spill may result in increased oil prices, negatively affecting these businesses.</li>
+          <li><b>Businesses reliant on coastal tourism.</b> As mentioned above, an oil spill would make coastal vacations less enjoyable. This could seriously hurt companies who rely on coastal tourism, such as hotels and restaurants.</li>
+          <li><b>Navies.</b> Oil spills would make naval operations much more difficult in affected areas, thus making life more difficult for navies operating in those areas.</li>
+          <li><b>Sea creatures.</b> Oil spills would have terrible effects on the lives of sea creatures near the areas of spills, polluting their habitat.</li>
+          <li><b>Coastal creatures.</b> Beyond sea creatures themselves, many animals such as birds live near the ocean and rely on sea creatures to eat. These animals would be very hurt by oil spills, both due to direct effects of pollution and due to the loss of their food supply.</li>
+        </ol>
+      </div>
+
+      <div id="needs">
+        <table>
+          <tr>
+            <th>Need #</th>
+            <th>Need</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>The system quickly detects oil spills</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>The system notifies important third parties of detected spills in a timely manner</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>The system operates properly for an extended period of time with minimal maintenance</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>The system is politically feasible.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>The system is financially feasible</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>The system utilizes only proven technologies</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>The system accurately detects oil spills</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>The system accurately assesses oil spill progress and severity</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="AHP">
+        <h2>Needs Prioritization (AHP)</h2>
+        <p>
+          To select a design, a process known as Analytic Hierarchy Process was used. The needs were compared one-on-one and were ranked from the least important to the most important. First, a scale was defined, with 1 being neutral and 9 being extremely prefered.
+        </p>
+        <p>
+          Each need was then compared with another need, and given a score. For example, Need # 1 is extremely prefered compared to Need # 4.
+        </p>
+        <table>
+          <tr>
+            <th>Need 1</th>
+            <th>Need 2</th>
+            <th>Need 3</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
