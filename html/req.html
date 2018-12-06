@@ -24,7 +24,7 @@
         </ul>
       </li>
       <li class="tab">
-        <a href="req.html">Requirements</a>
+        <a class="active" href="req.html">Requirements</a>
         <ul>
           <li class="tab"><a href="req.html#stakeholders">Stakeholders</a></li>
           <li class="tab"><a href="req.html#needs">Needs</a></li>
@@ -55,6 +55,8 @@
     </ul>
 
     <div class="report">
+      <h1>Requirements</h1>
+
       <div id="stakeholders">
         <h2>Stakeholder Analysis</h2>
         <p>
@@ -75,61 +77,49 @@
       </div>
 
       <div id="needs">
-        <table>
-          <tr>
-            <th>Need #</th>
-            <th>Need</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>The system quickly detects oil spills</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>The system notifies important third parties of detected spills in a timely manner</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>The system operates properly for an extended period of time with minimal maintenance</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>The system is politically feasible.</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>The system is financially feasible</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>The system utilizes only proven technologies</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>The system accurately detects oil spills</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>The system accurately assesses oil spill progress and severity</td>
-          </tr>
-        </table>
+        <h2>Needs</h2>
+        <p>
+          Based on the stakeholder listed above and the functions described in our functional analysis, we devised the following list of needs.
+        </p>
+        <img src="../img/needsTable.png"/>
       </div>
 
-      <div id="AHP">
+      <div id="ahp">
         <h2>Needs Prioritization (AHP)</h2>
         <p>
           To select a design, a process known as Analytic Hierarchy Process was used. The needs were compared one-on-one and were ranked from the least important to the most important. First, a scale was defined, with 1 being neutral and 9 being extremely prefered.
         </p>
+        <img src="../img/needsScale.png"/>
         <p>
           Each need was then compared with another need, and given a score. For example, Need # 1 is extremely prefered compared to Need # 4.
         </p>
-        <table>
-          <tr>
-            <th>Need 1</th>
-            <th>Need 2</th>
-            <th>Need 3</th>
-          </tr>
-        </table>
+        <img src="../img/prioritizationMatrix.png"/>
+        <p>
+          The columns were added. To standardize the column scores, the values in the columns were divided by the total to make the sum equal to 1, as it can be seen in the table below. By averaging the rows, a final score was determined for each need and ranked. It would appear that Need # 8 takes the most priority and Need # 4 takes the least. Therefore, the need that the system accurately assesses oil spills progress and severity takes precedence over the need that the system is politically feasible.
+        </p>
+        <img src="../img/prioritizationMatrixStandardized.png"/>
+        <p>
+          All the other needs are ranked accordingly, from 1 to 8, with 1 being the most important and 8 being the least.
+        </p>
+        <img src="../img/needsRankings.png"/>
+      </div>
+
+      <div id="reqs">
+        <h2>Requirements</h2>
+        <p>
+          Based on our needs analysis, we were able to generate a list of specific requirements for our system. Note that a false negative inspection refers to an instance in which the system inspects an area with an oil spill but fails to detect or report the spill, while a false positive inspection refers to an instance in which the system reports an oil spill that is not actually there. Also note that minimum component reliability refers to the reliability of the least-reliable component of the system. Finally, note that Importance is ranked from 1 to 5, with 1 being least important and 5 being most important.
+        </p>
+        <img src="../img/reqs.png"/>
+      </div>
+
+      <div id="hoq">
+        <h2>House of Quality</h2>
+        <p>
+          From the requirements table alone it may be unclear exactly how our needs and requirements relate. To make this more clear, we created a House of Quality showing relationships and importance of needs and requirements. We also utilized this House of Quality to consider the performance of other oil-spill-detecting products from competitors. Note that we were not able to directly compare these products to ours as we had not yet generated an actual concept for our system.
+        </p>
+        <p>
+          The House of Quality is too large and complex to be viewed as anything other than a Microsoft Excel file, but it can be downloaded <a href="../doc/HOQ.xlsx">here</a>.
+        </p>
       </div>
     </div>
   </body>
