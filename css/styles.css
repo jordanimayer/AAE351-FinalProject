@@ -7,7 +7,7 @@ body {
 
 .report {
   margin-left: 20vw;
-  padding: 1px 16px;
+  padding-left: 2vw;
   max-width: 75vw;
   line-height: 1.6;
   color: #444;
@@ -36,6 +36,7 @@ p, .report li {
 
 #navbar {
     list-style-type: none;
+	font-size: calc(12px + 0.7vw);
     margin: 0;
     padding: 0;
     width: 20vw;
