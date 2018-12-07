@@ -8,7 +8,7 @@ body {
 .report {
   margin-left: 20vw;
   padding-left: 2vw;
-  max-width: 75vw;
+  max-width: 73vw;
   line-height: 1.6;
   color: #444;
   background-color: #EEE;
@@ -35,32 +35,32 @@ p, .report li {
 }
 
 #navbar {
-    list-style-type: none;
+  list-style-type: none;
 	font-size: calc(12px + 0.7vw);
-    margin: 0;
-    padding: 0;
-    width: 20vw;
-    background-color: #555;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+  margin: 0;
+  padding: 0;
+  width: 20vw;
+  background-color: #555;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 .tab a {
-    display: block;
-    color: #EEE;
-    padding: 8px 16px;
-    text-decoration: none;
+  display: block;
+  color: #EEE;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
 .tab a.active {
-    background-color: #EEE;
-    color: #444;
+  background-color: #EEE;
+  color: #444;
 }
 
 .tab a:hover:not(.active) {
-    background-color: #333;
-    color: #EEE;
+  background-color: #333;
+  color: #EEE;
 }
 
 .tab ul {
@@ -78,4 +78,9 @@ ol ol {
 
 img {
   width: 75vw;
+}
+
+iframe {
+  width: 73vw;
+  height: 41.0625vw;
 }
